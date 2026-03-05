@@ -19,23 +19,23 @@ function Home(){
                         <p className='galleryLink'>View full gallery</p>
                     </div>
                     <div className='slideShow'>
-                        Slide Show section using animation function
+                        Slideshow section using animated transitions
                     </div>
                 </section>
-                <section className='aboutmeSection'>
+                <section className='aboutMeSection'>
                     <div className='aboutMe'>
                         <p className='aboutMeTitle'>About Me</p>
                         <p className="brief">
-                            Enriching mexican culture with elegance and classic music/steps. 
+                            Enriching Mexican culture with elegance and classic music and dance steps.
                             <br /><br />
-                            Read our story to learn more about our mission and oppertunity we want to provide.
+                            Read our story to learn more about our mission and the opportunities we want to provide.
                         </p>
                     </div>
                 </section>
                 <section className="joinSection">
                     <div className='join'>
-                        <p className="joinTItle">Join us</p>
-                        <p className="brief">Join our company, we are looking for talented and willing to learn individuals</p>
+                        <p className="joinTitle">Join us</p>
+                        <p className="brief">Join our company. We are looking for talented individuals who are willing to learn.</p>
                         <button className='contact'>Contact us</button>
                    </div>
                 </section>

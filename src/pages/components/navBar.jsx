@@ -19,7 +19,7 @@ function navBar(){
                 </div>
                 
                 <div className={`linkContainer ${isOpen ? "active" : ""}`}>
-                    <div className="links"><p>Gallary</p></div>
+                    <div className="links"><p>Gallery</p></div>
                     <div className="links"><p>About Us</p></div>
                     <div className="links" id='lastLink'><p>Contact</p></div>
                 </div>

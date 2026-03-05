@@ -5,7 +5,7 @@
 }.hero{
     text-align: center;
 }
-.gallerySection,.aboutmeSection,.joinSection{ 
+.gallerySection,.aboutMeSection,.joinSection{
     padding: 25px;
 }
 
@@ -22,7 +22,7 @@
 .galleryLink{
     color: blue;
 }
-.galleryTitle,.aboutMeTitle,joinTitle{
+.galleryTitle,.aboutMeTitle,.joinTitle{
     font-size: larger;
 }
 .contact{

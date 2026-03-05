@@ -8,7 +8,7 @@ function Footer(){
                     <p>Ballet Folklorico de Puebla York</p>
                     <p>____</p>
                     <p>@ 2026 All rights reserved</p>
-                    <p>Balletfolklroicopueblayork@gmail.com</p>
+                    <p>Balletfolkloricopueblayork@gmail.com</p>
                     <p>917-562-9571</p>
                 </div>
             </div>

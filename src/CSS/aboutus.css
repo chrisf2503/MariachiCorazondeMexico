@@ -1,12 +1,19 @@
+.aboutusContent{
+    justify-content: center ;
+}
 .box{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    font-size: larger;
 }
 .contentBox{
     width: 500px;
 }
 .titlebox h1{
     margin-top: 0px;
+}
+.mission, .aboutme, .opportunity{
+    padding: 100px;
 }
