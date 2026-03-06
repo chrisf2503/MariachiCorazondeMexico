@@ -11,7 +11,7 @@ function navBar(){
     return (
         <>
             <div className='navContainer'>
-                <div className='title'><p className='name'>Ballet Folklorico de Puebla York</p></div>
+                <div className='title'><p className='name'>Mariachi Corazon de Mexico</p></div>
                 <div className="menu_button" onClick={toggleMenu}>
                     <button className="menu" >
                         {isOpen ? "Close" : "Menu"}

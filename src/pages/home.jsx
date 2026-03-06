@@ -1,6 +1,7 @@
 import NavBar from './components/navBar';
 import Footer from './components/footer';
 import '../CSS/home.css'
+import introVideo from '../assets/Intro_video.mp4';
 function Home(){
     return (
         <div className='homePage'>
@@ -9,7 +10,10 @@ function Home(){
 
             <main className='homeContent'>
                 <div className='hero'>
-                    Ballet Folklorico de Puebla York
+                    <video className="heroVideo" controls>
+                        <source src={introVideo} type="video/mp4" />
+                            Your browser does not support the video tag.
+                    </video>
                 </div>
 
                 <section className='gallerySection'>
