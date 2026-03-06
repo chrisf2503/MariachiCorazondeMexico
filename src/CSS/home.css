@@ -4,13 +4,17 @@
     
 }
 .hero{
+    background-color: black;
+    display: flex;
+    justify-content: center;
     width: 100%;
     margin: 0;
     overflow: visible;
 }
 .heroVideo{
+    padding: 50px;
     display: block;
-    width: 100%;
+    width: 70%;
     height: auto;
     object-fit: contain;
 }
@@ -21,7 +25,7 @@
 .gallery,.aboutMe,.join{
     border-radius: 10px;
     padding: 25px;
-    background-color: lightgray;
+    background-color:snow;
 }
 
 .galleryLink,.brief{

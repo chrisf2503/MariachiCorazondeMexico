@@ -1,10 +1,21 @@
 .navContainer{
-    height: 45px;
+    background-color: black;
+    color: white;
+    height: 64px;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+.navLogo{
+    padding-top: 10px;
+    padding-left: 10px ;
+    display: block;
+    height: 64px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 .linkContainer{
     width: 66.66%;
@@ -19,13 +30,15 @@
 }
 .title{
     padding-left: 10px;
+    display: flex;
+    align-items: center;
 }
 .name{
     font-family: 'EB Garamond';
 }
 #lastLink{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 .menu_button{
     display: none;
@@ -34,11 +47,15 @@
 @media (max-width: 768px) {
     .navContainer{
         justify-content: space-between;   
+        height: 56px;
+    }
+    .navLogo{
+        height: 48px;
     }
     .linkContainer {
         display: none;
         position: absolute;
-        top: 45px;
+        top: 56px;
         left: 0;
         width: 100%;
         background-color: white;
