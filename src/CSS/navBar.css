@@ -3,38 +3,44 @@
     color: white;
     height: 64px;
     display: flex;
-    justify-content: flex-start;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 .navLogo{
-    padding-top: 10px;
-    padding-left: 10px ;
     display: block;
-    height: 64px;
+    height: 56px;
     width: auto;
     max-width: 100%;
     object-fit: contain;
 }
 .linkContainer{
+    height: 100%;
     width: 66.66%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     text-align: center;
 } 
 .links{
     width: 200px;
+    height: 100%;
     padding-left: 20px;
     padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links p{
+    margin: 0;
+    transform: translateY(-1px);
 }
 .title{
     padding-left: 10px;
+    height: 100%;
     display: flex;
     align-items: center;
-}
-.name{
-    font-family: 'EB Garamond';
 }
 #lastLink{
     background-color: white;
