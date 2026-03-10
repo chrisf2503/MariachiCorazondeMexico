@@ -1,4 +1,3 @@
-
 .homeContent{
     display: flex;
     flex-direction: column;
@@ -20,22 +19,55 @@
     height: auto;
     object-fit: contain;
 }
-.gallerySection,.aboutMeSection,.informationSection{
+.gallerySection,.aboutUsSection{
     padding: 25px;
 }
-.gallery,.aboutMe{
+.gallery,.aboutUs{
     border-radius: 10px;
     padding: 25px;
     background-color:snow;
 }
 .logo{
+    padding-top: 10px;
     width: 150px;
     height: 100px;
 }
+.service h4{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
 .info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: #5f78b1;
+}
+.service{
+    padding-left: 25px;
+}
+
+.side_photo_img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+} 
+.Social_Media{
+    text-align: center;
+}
+.logo{
+    width: 200px;
+    margin-bottom: 15px;
+}
+.socials{
+    list-style: none;
+    padding: 0;
     display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(99, 125, 191);
+    gap: 15px;
+    justify-content: center;
+}
+.icons{
+    font-size: 18px;
 }
 .slideShow{
     background-color: black;
@@ -95,6 +127,7 @@ ul{
     height: 100%;
     object-fit: cover;
 }
+
 .photosMobile{
     width: 100%;
     gap: 0;
@@ -112,17 +145,21 @@ ul{
     font-size: x-large;
 
 }
+.brief{
+    width: 70%;
+    line-height: 2;
+}
 .galleryLink{
     color: blue;
 }
-.galleryTitle,.aboutMeTitle,.joinTitle{
+.galleryTitle,.aboutUsTitle,.joinTitle{
     font-size: larger;
 }
-.aboutMe{
+.aboutUs{
     font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  opacity: 0.85;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.85;
 }
 .contact{
     width: 150px;
@@ -132,7 +169,6 @@ ul{
     border-color:white;
     background-color: white;
 }
-
 @keyframes photoTrack{
     from{
         transform: translateX(0);
@@ -193,6 +229,7 @@ ul{
         aspect-ratio: 5 / 4;
     }
 }
+
 
 @media (prefers-reduced-motion: reduce){
     .photos{

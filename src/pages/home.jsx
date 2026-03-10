@@ -1,15 +1,16 @@
 import { useEffect, useRef, useState } from 'react';
 import NavBar from './components/navBar';
 import Footer from './components/footer';
-import '../CSS/home.css'
+import '../CSS/home.css';
 import introVideo from '../assets/CorazondeMexico.mp4';
-import photo1 from '../photogallary/img1.jpg'
-import photo2 from '../photogallary/img2.jpg'
-import photo3 from '../photogallary/img3.jpg'
-import photo4 from '../photogallary/img4.jpg'
-import photo5 from '../photogallary/img5.jpg'
-import logo from '../assets/mariachi_corazon_logo.png'
-function Home(){
+import photo1 from '../photogallary/img1.jpg';
+import photo2 from '../photogallary/img2.jpg';
+import photo3 from '../photogallary/img3.jpg';
+import photo4 from '../photogallary/img4.jpg';
+import photo5 from '../photogallary/img5.jpg';
+import logo from '../assets/Logo.png';
+
+function Home() {
     const heroVideoRef = useRef(null);
     const [isMobile, setIsMobile] = useState(false);
     const [activePhoto, setActivePhoto] = useState(0);
@@ -66,7 +67,7 @@ function Home(){
     return (
         <div className='homePage'>
 
-            <NavBar/>
+            <NavBar />
 
             <main className='homeContent'>
                 <div className='hero'>
@@ -80,7 +81,7 @@ function Home(){
                         preload="auto"
                     >
                         <source src={introVideo} type="video/mp4" />
-                            Your browser does not support the video tag.
+                        Your browser does not support the video tag.
                     </video>
                 </div>
 
@@ -118,18 +119,22 @@ function Home(){
                         )}
                     </div>
                 </section>
-                <section className='aboutMeSection'>
-                    <div className='aboutMe'>
-                        <p className='aboutMeTitle'>About Me</p>
+                <section className='aboutUsSection'>
+                    <div className='aboutUs'>
+                        <p className='aboutUsTitle'>Quiénes somos</p>
                         <p className="brief">
-                            Enriching Mexican culture with elegance and classic music and dance steps.
-                            <br /><br />
-                            Read our story to learn more about our mission and the opportunities we want to provide.
+                            Mariachi Corazón de México lleva el alma y la tradición de México a cada escenario, 
+                            compartiendo la pasión del mariachi a través de interpretaciones que honran nuestra 
+                            cultura y nuestras raíces.
                         </p>
                     </div>
                 </section>
-                <section className="informationSection">
+                <section className='informationSection'>
                     <div className='info'>
+                        <div className='side_photo'>
+                            <img src={photo1} className='side_photo_img' />
+                        </div>
+
                         <div className='service'>
                             <h4>Servicio</h4>
 
@@ -140,16 +145,24 @@ function Home(){
                                 <li>Serenatas</li>
                             </ul>
                         </div>
-                        <div className='Social_Midea'>
-                            <img src={logo} className='logo'/>
+
+                        <div className='Social_Media'>
+                            <img src={logo} className='logo' />
+
+                            <ul className='socials'>
+                                <li className='icons'>1</li>
+                                <li className='icons'>2</li>
+                                <li className='icons'>3</li>
+                            </ul>
                         </div>
-                   </div>
+                    </div>
                 </section>
             </main>
 
-            <Footer/>
+            <Footer />
 
-        </div>  
+        </div>
     );
 }
+
 export default Home;

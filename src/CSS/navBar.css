@@ -61,6 +61,8 @@
     text-decoration: none;
 }
 #lastLink{
+    height: 40px;
+    border-radius: 20px;
     background-color: white;
     color: black;
 }
@@ -102,7 +104,9 @@
         display: block;
         padding-right: 15px;
     }
-
+    #lastLink{
+        border-radius: none;
+    }
     body.menu-open .aboutusContent{
         width: min(94vw, 1100px);
         margin-inline: auto;
