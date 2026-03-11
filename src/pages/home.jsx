@@ -139,10 +139,10 @@ function Home() {
                             <h4>Servicio</h4>
 
                             <ul className='list'>
-                                <li>Eventos</li>
-                                <li>Bodas</li>
-                                <li>Funerales</li>
-                                <li>Serenatas</li>
+                                <li>Eventos: discription</li>
+                                <li>Bodas: discription</li>
+                                <li>Funerales: discription</li>
+                                <li>Serenatas: discription</li>
                             </ul>
                         </div>
 

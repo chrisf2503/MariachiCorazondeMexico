@@ -1,3 +1,4 @@
+/* homeContent */
 .homeContent{
     display: flex;
     flex-direction: column;
@@ -5,6 +6,8 @@
     margin-inline: auto;
     transition: width 220ms ease, margin 220ms ease;
 }
+
+/* heroSection */
 .hero{
     background-color: black;
     display: flex;
@@ -19,55 +22,17 @@
     height: auto;
     object-fit: contain;
 }
+
+/* sharedSectionSpacing */
 .gallerySection,.aboutUsSection{
     padding: 25px;
 }
-.gallery,.aboutUs{
+
+/* gallerySection */
+.gallery{
     border-radius: 10px;
     padding: 25px;
     background-color:snow;
-}
-.logo{
-    padding-top: 10px;
-    width: 150px;
-    height: 100px;
-}
-.service h4{
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-.info{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    background-color: #5f78b1;
-}
-.service{
-    padding-left: 25px;
-}
-
-.side_photo_img{
-    height: 100%;
-    width: 100%;
-    border-radius: 15px;
-} 
-.Social_Media{
-    text-align: center;
-}
-.logo{
-    width: 200px;
-    margin-bottom: 15px;
-}
-.socials{
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-}
-.icons{
-    font-size: 18px;
 }
 .slideShow{
     background-color: black;
@@ -81,33 +46,6 @@
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
 }   
-ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-.list li {
-  position: relative;
-  padding-left: 36px;
-  margin-bottom: 12px;
-  width: 22px;
-  height: 22px;
-  left: 0;
-  top: 3px;
-  background-image: url("../assets/infinity_heart.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-}
-.list li:hover {
-    background-image: url("../assets/infinity_heart_gold.png");
-    color: gold;
-}
 .photos{
     list-style-type: none;
     display: flex;
@@ -143,11 +81,6 @@ ul{
 }
 .galleryLink,.brief{
     font-size: x-large;
-
-}
-.brief{
-    width: 70%;
-    line-height: 2;
 }
 .galleryLink{
     color: blue;
@@ -155,11 +88,83 @@ ul{
 .galleryTitle,.aboutUsTitle,.joinTitle{
     font-size: larger;
 }
+
+/* aboutUsSection */
 .aboutUs{
+    border-radius: 10px;
+    padding: 25px;
+    background-color:snow;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     opacity: 0.85;
+}
+
+/* informationSection */
+.info{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #5f78b1;
+}
+.side_photo_img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+.service{
+    padding-left: 25px;
+}
+.service h4{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.list li {
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 12px;
+  left: 0;
+  top: 3px;
+  background-image: url("../assets/infinity_heart.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.list li:hover {
+    background-image: url("../assets/infinity_heart_gold.png");
+    color: gold;
+}
+.Social_Media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.logo{
+    width: 50%;
+    height: 70%;
+    margin-bottom: 15px;
+}
+.socials{
+
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.icons{
+    font-size: 18px;
+}
+
+/* sharedText */
+.brief{
+    width: 70%;
+    line-height: 2;
 }
 .contact{
     width: 150px;
@@ -169,6 +174,13 @@ ul{
     border-color:white;
     background-color: white;
 }
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* animations */
 @keyframes photoTrack{
     from{
         transform: translateX(0);
@@ -178,6 +190,7 @@ ul{
     }
 }
 
+/* responsive */
 @media (max-width: 900px){
     .hero{
         overflow: hidden;
@@ -228,8 +241,14 @@ ul{
         flex: 0 0 min(72vw, 240px);
         aspect-ratio: 5 / 4;
     }
-}
+    /*Information Section*/
+    .info{
+        display: flex;
+        flex-wrap: wrap;
+        grid-template: none¡;
+    }
 
+}
 
 @media (prefers-reduced-motion: reduce){
     .photos{
