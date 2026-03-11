@@ -112,10 +112,12 @@
     border-radius: 15px;
 }
 .service{
+    padding: 20px;
+    width: 250px;
     padding-left: 25px;
 }
 .service h4{
-    margin-bottom: 10px;
+    margin-top: 5px;
     font-size: 20px;
 }
 .list li {
